@@ -28,7 +28,7 @@ import itertools
 raw_df_1 = pd.read_csv('testing_data_1.csv')
 df_1 = pd.DataFrame(raw_df_1)
 #Convert target chains into list
-target_input = df_1['Entry'].values.tolist()
+target_input = df_1['Entry'].values.tolist() #Inputs must be written in chain format. EXAMPLE: 4r57_A
 
 #Check for name of columns in df_1 if there are more than 2 columns
 df_1.columns.tolist() 
@@ -36,7 +36,7 @@ df_1.columns.tolist()
 #read the second dataset
 raw_df_2 = pd.read_csv('testing_data_2.csv')
 df_2 = pd.DataFrame(raw_df_2)
-query_input = df_2['Entry'].values.tolist()
+query_input = df_2['Entry'].values.tolist() #Inputs must be written in chain format. EXAMPLE: 4r57_A
 
 #Check for name of columns in df_1 if there are more than 2 columns
 df_2.columns.tolist() 
